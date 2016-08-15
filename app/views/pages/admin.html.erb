@@ -1,0 +1,25 @@
+<h1>You must be connected to see this.</h1>
+
+
+<h2>You are <%= current_user.email %></h2>
+
+<table class="table">
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td>
+        <%= user.email %>
+      </td>
+      <td>
+        <%= user.first_name %>
+      </td>
+      <td>
+        <%= user.last_name %>
+      </td>
+      <td>
+        <%= user.city %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
